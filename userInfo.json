@@ -1,0 +1,12 @@
+{
+  "response": [
+    {
+      "id": 155379,
+      "bdate": "6.12.1990",
+      "first_name": "Виктория",
+      "last_name": "Половникова",
+      "can_access_closed": true,
+      "is_closed": false
+    }
+  ]
+}

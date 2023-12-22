@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ first_name }} {{ last_name }} | Ваш личный профиль{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Информация о владельце профиля</h1>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">
+            <div class="alert alert-light lead">
+                <p>Пользователь: {{ first_name }} {{ last_name }}</p>
+                <p>Адрес страницы: <a href="https://vk.com/id{{ id }}" class="link">https://vk.com/id{{ id }}</a></p>
+                <p>День рождения: {{ bdate }}</p>
+                <p>Город: {{ city }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="col">
+      Фотоальбомы {{ AlbumCounts }}
+    </div>
+    <div class="col">
+      Фотографии
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      Друзья {{ countFriends }}
+    </div>
+    <div class="col">
+      Подарки
+    </div>
+    <div class="col">
+      Дата регистрации
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+{% endblock %}
